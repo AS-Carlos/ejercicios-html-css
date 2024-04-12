@@ -1,19 +1,18 @@
-let contenido = document.getElementById("contenido");
+let contenido = document.querySelectorAll(".now");
 
 
 function printFecha() {
 
-
-    let fecha = Date.now();
-    let local = Date(fecha);
     
-    
+    let fecha = new Date;    
 
-    contenido.innerHTML = "Fecha en milisegundos => " + fecha + "<br> Fecha local => " + local;
+    contenido.forEach((element) => element.innerHTML = "Fecha local => " + fecha);    
+    
     
     setTimeout(printFecha, 1000);
 }
 
 printFecha();
+console.log(contenido);
 
 
