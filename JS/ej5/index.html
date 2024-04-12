@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js.js"></script>
+</head>
+<body>
+    <audio id="audio" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-three/emergency_bell_alarm_small_ring.mp3"></audio>
+
+
+    <span>Alarma: </span>
+    <input type="number" id="segundos" placeholder="Introduce los segundos" >
+    <input type="button" id="btnActiva" value="¡Activa!" onclick="activa()">
+    <input type="button" id="btnPara" value="STOP" onclick="parar()">
+
+    <div id="tiempo"> </div>
+</body>
+</html>
